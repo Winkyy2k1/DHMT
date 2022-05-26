@@ -158,14 +158,16 @@ void shaderSetup( void )
 	glVertexAttribPointer(loc_vNormal, 3, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(sizeof(points) + sizeof(colors)));
 
 
-	glUniform4fv(glGetUniformLocation(program, "AmbientProduct"), 1, ambient_product);  // Nguồn sáng môi trường
-	glUniform4fv(glGetUniformLocation(program, "DiffuseProduct"), 1, diffuse_product);  // ánh sáng khuếch tán
-	glUniform4fv(glGetUniformLocation(program, "SpecularProduct"), 1, specular_product); // ánh sáng phản chiếu/chói
-	glUniform4fv(glGetUniformLocation(program, "LightPosition"), 1, light_position); // ánh sáng điểm
-	glUniform1f(glGetUniformLocation(program, "Shininess"), material_shininess);  // độ sắc nét
+	//glUniform4fv(glGetUniformLocation(program, "AmbientProduct"), 1, ambient_product);  // Nguồn sáng môi trường
+	//glUniform4fv(glGetUniformLocation(program, "DiffuseProduct"), 1, diffuse_product);  // ánh sáng khuếch tán
+	////glUniform4fv(glGetUniformLocation(program, "SpecularProduct"), 1, specular_product); // ánh sáng phản chiếu/chói
+	//glUniform4fv(glGetUniformLocation(program, "LightPosition"), 1, light_position); // ánh sáng điểm
+	//glUniform1f(glGetUniformLocation(program, "Shininess"), material_shininess);  // độ s ắc nét
 
-
-
+	// mấy cái này là gì? cop cái base xong code thêm thôi     nhưng cô bắt giải thích đoạn code kia là chịu đấy. Xoá nó đi dk k? thử xem
+	//không biết
+	//trước có cái base hình vuông của cô xong cứ thế code thêm :V
+	// hay bạn sửa cái code mà mk code từ bài hình của ci???
 	loc_modelMatrix = glGetUniformLocation(program, "modelMatrix");
 	//Thêm vào hàm shaderSetup
 	projection_loc = glGetUniformLocation(program, "Projection");
@@ -184,8 +186,7 @@ GLfloat theta[] = { 0.0, 0.0, 0.0 };
 float dich = 0;
 void Mat() {
 	instance = Scale(ngang, dai, 0.2);
-	material_diffuse = color4(1.0, 0.0, 0.0, 1.0);  // mau vat
-	diffuse_product = light_diffuse * material_diffuse;
+	
 	glUniform4fv(glGetUniformLocation(program, "DiffuseProduct"), 1, diffuse_product);
 	glUniformMatrix4fv(loc_modelMatrix, 1, GL_TRUE, instance_base*instance);
 	glDrawArrays(GL_TRIANGLES, 0, NumPoints);
@@ -193,8 +194,7 @@ void Mat() {
 
 void Kim() {
 	instance = Translate(0.25,0,0.2)* Scale(0.5, 0.1, 0.2);
-	material_diffuse = color4(0.0, 0.0, 1.0, 1.0);  // mau vat
-	diffuse_product = light_diffuse * material_diffuse;
+	
 	glUniform4fv(glGetUniformLocation(program, "DiffuseProduct"), 1, diffuse_product);
 	glUniformMatrix4fv(loc_modelMatrix, 1, GL_TRUE, instance_base * instance);
 	glDrawArrays(GL_TRIANGLES, 0, NumPoints);
@@ -202,8 +202,7 @@ void Kim() {
 
 void Gio12() {
 	instance = Translate(0, 0.8, 0.2)*RotateZ(90)* Scale(0.2, 0.1, 0.2);
-	material_diffuse = color4(0.0, 0.0, 1.0, 1.0);  // mau vat
-	diffuse_product = light_diffuse * material_diffuse;
+	
 	glUniform4fv(glGetUniformLocation(program, "DiffuseProduct"), 1, diffuse_product);
 	glUniformMatrix4fv(loc_modelMatrix, 1, GL_TRUE, instance_base * instance);
 	glDrawArrays(GL_TRIANGLES, 0, NumPoints);
@@ -211,8 +210,7 @@ void Gio12() {
 
 void Gio3() {
 	instance = Translate(0.8, 0, 0.2)* Scale(0.2, 0.1, 0.2);
-	material_diffuse = color4(0.0, 0.0, 1.0, 1.0);  // mau vat
-	diffuse_product = light_diffuse * material_diffuse;
+	
 	glUniform4fv(glGetUniformLocation(program, "DiffuseProduct"), 1, diffuse_product);
 	glUniformMatrix4fv(loc_modelMatrix, 1, GL_TRUE, instance_base * instance);
 	glDrawArrays(GL_TRIANGLES, 0, NumPoints);
@@ -220,21 +218,19 @@ void Gio3() {
 
 void Gio6() {
 	instance = Translate(0, -0.8, 0.2) * RotateZ(90) * Scale(0.2, 0.1, 0.2);
-	material_diffuse = color4(0.0, 0.0, 1.0, 1.0);  // mau vat
-	diffuse_product = light_diffuse * material_diffuse;
+
 	glUniform4fv(glGetUniformLocation(program, "DiffuseProduct"), 1, diffuse_product);
 	glUniformMatrix4fv(loc_modelMatrix, 1, GL_TRUE, instance_base * instance);
 	glDrawArrays(GL_TRIANGLES, 0, NumPoints);
 }
 void Gio9() {
 	instance = Translate(-0.8, 0, 0.2) * Scale(0.2, 0.1, 0.2);
-	material_diffuse = color4(0.0, 0.0, 1.0, 1.0);  // mau vat
-	diffuse_product = light_diffuse * material_diffuse;
+	
 	glUniform4fv(glGetUniformLocation(program, "DiffuseProduct"), 1, diffuse_product);
 	glUniformMatrix4fv(loc_modelMatrix, 1, GL_TRUE, instance_base * instance);
 	glDrawArrays(GL_TRIANGLES, 0, NumPoints);
 }
-
+// ý mk là bỏ hẳn cái đổi màu ý
 void DongHo() {
 	instance_base =Translate(dich,0,0)* RotateY(theta[0])*RotateZ(180);
 	Mat();

@@ -1,1 +1,30 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(439,5): error MSB8020: The build tools for v143 (Platform Toolset = 'v143') cannot be found. To build using the v143 build tools, please install v143 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution".
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  example1.cpp
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\mat.h(581,5): warning C4566: character represented by universal-character-name '\u0110' cannot be represented in the current code page (1252)
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\mat.h(581,5): warning C4566: character represented by universal-character-name '\u1ED3' cannot be represented in the current code page (1252)
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\mat.h(581,5): warning C4566: character represented by universal-character-name '\u1ECD' cannot be represented in the current code page (1252)
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\mat.h(770,5): warning C4566: character represented by universal-character-name '\u0110' cannot be represented in the current code page (1252)
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\mat.h(770,5): warning C4566: character represented by universal-character-name '\u1ED3' cannot be represented in the current code page (1252)
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\mat.h(770,5): warning C4566: character represented by universal-character-name '\u1ECD' cannot be represented in the current code page (1252)
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\mat.h(777,5): warning C4566: character represented by universal-character-name '\u0110' cannot be represented in the current code page (1252)
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\mat.h(777,5): warning C4566: character represented by universal-character-name '\u1ED3' cannot be represented in the current code page (1252)
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\mat.h(777,5): warning C4566: character represented by universal-character-name '\u1ECD' cannot be represented in the current code page (1252)
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\mat.h(784,5): warning C4566: character represented by universal-character-name '\u0110' cannot be represented in the current code page (1252)
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\mat.h(784,5): warning C4566: character represented by universal-character-name '\u1ED3' cannot be represented in the current code page (1252)
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\mat.h(784,5): warning C4566: character represented by universal-character-name '\u1ECD' cannot be represented in the current code page (1252)
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\example1.cpp(52,40): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\example1.cpp(57,43): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\example1.cpp(58,44): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\example1.cpp(85,46): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\example1.cpp(187,34): warning C4305: 'argument': truncation from 'double' to 'const GLfloat'
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\example1.cpp(195,33): warning C4305: 'argument': truncation from 'double' to 'const GLfloat'
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\example1.cpp(195,55): warning C4305: 'argument': truncation from 'double' to 'const GLfloat'
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\example1.cpp(203,34): warning C4305: 'argument': truncation from 'double' to 'const GLfloat'
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\example1.cpp(203,68): warning C4305: 'argument': truncation from 'double' to 'const GLfloat'
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\example1.cpp(211,34): warning C4305: 'argument': truncation from 'double' to 'const GLfloat'
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\example1.cpp(211,56): warning C4305: 'argument': truncation from 'double' to 'const GLfloat'
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\example1.cpp(219,35): warning C4305: 'argument': truncation from 'double' to 'const GLfloat'
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\example1.cpp(219,72): warning C4305: 'argument': truncation from 'double' to 'const GLfloat'
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\example1.cpp(226,35): warning C4305: 'argument': truncation from 'double' to 'const GLfloat'
+F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\GLSLExperiment\example1.cpp(226,58): warning C4305: 'argument': truncation from 'double' to 'const GLfloat'
+  GLSLExperiment.vcxproj -> F:\Đồ họa máy tính\DHMT\DeDongHo_CoChieuPhoiCanh\Debug\GLSLExperiment.exe
